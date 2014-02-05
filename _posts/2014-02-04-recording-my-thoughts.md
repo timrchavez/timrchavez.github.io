@@ -13,14 +13,15 @@ effort eventually failed.  Part of the reason I think this happened had
 to do with the fact that I was not really working on anything terribly
 interesting at work and most of my off time was being spent learning how 
 to be a dad (which I am still leaning, by the way).  A lot has changed
-between 2010 and 2014.  For one, I feel like I am working on some pretty
-interesting at work (at least for someone who enjoys release engineering,
-continuous integration, and software delivery pipelines) that I would love
-to write about.  Additionally, I have refound some of my coding mojo and am
-currently working on a couple apps outside of work that I would like to blog
-about.  I have also started playing around with arduinos and would rather 
-make this blog a point of origin for those adventures that I can share with
-all my other social networks.
+between 2010 and 2014, though.  For example, I feel like I have established
+some pretty useful parenting patterns that have given me back some of my free
+time back in the evening (mostly getting my child to slee before 9PM).  I am 
+also working on some pretty interesting things at Canonical (at least for 
+someone who enjoys release engineering, continuous integration, and software 
+delivery pipelines) that I would love to to write about openly.  I have also 
+rediscovered some of my coding mojo and developed an interest in physical 
+sensors and the so-called "Internet of things" and would like to blog about 
+these things as well.
 
 This time around I have chosen to use my [GitHub](http://github.com) User Page + 
 [Jekyll-Bootstrap](http://jekyllbootstrap.com/). My sincere hope is that by using
@@ -37,5 +38,5 @@ on [GitHub](http://github.com) has benefits as well.  For example, it allows oth
 people to raise issues and / or submit pull requests to fix issues on the blog if they 
 so choose.
 
-So while I cannot guarantee that this blog will contain quality content, I hope I have 
+So while I cannot guarantee that this blog will have quality content, I hope I have 
 taken the necessary steps to ensure it will at least have content :)  
