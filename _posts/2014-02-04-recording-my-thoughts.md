@@ -11,13 +11,14 @@ I attempted to start a blog at [Tumblr](http://timrcc.tumblr.com) in 2010
 right after joining [Canonical](http://www.canonical.com), but I never formed 
 a blogging habbit, and that effort eventually failed.  Part of the reason 
 I think this happened had to do with the fact that I was not really doing 
-anything terribly interesting Canonical at the time and most of my off time
-was being spent learning how to be a new dad.  Enough has changed between 2010 
-and 2014, though, that I the urge to start blogging again.  For one, I find that
-I am currently working on some pretty interesting stuff at Canonical that I would 
-like to blog about.  My family has also finally found a routine that works and it 
-has given me back some of my free time to work on personal projects and I would 
-like to blog about those as well.
+anything terribly interesting at Canonical at the time and I stopped working on
+personal projects because I was instead learning how to be a new dad.  However, 
+enough has changed between 2010 and 2014, that I now feel the urge to start 
+blogging again (and to do a better job at it).  I am happy to report that I am 
+now working on some pretty interesting stuff at Canonical and feel it is worth 
+blogging about.  My family has also found a routine that works and it has given 
+me back some of my free time to work on personal projects; some of which may be
+interesting enough to blog about!
 
 This time around I have chosen to use my [GitHub](http://github.com) User Page + 
 [Jekyll-Bootstrap](http://jekyllbootstrap.com/). My sincere hope is that by using
