@@ -17,8 +17,8 @@ enough has changed between 2010 and 2014, that I now feel the urge to start
 blogging again (and to do a better job at it).  I am happy to report that I am 
 now working on some pretty interesting stuff at Canonical and feel it is worth 
 blogging about.  My family has also found a routine that works and it has given 
-me back some of my free time to work on personal projects; some of which may be
-interesting enough to blog about!
+me back some of my free time to work on personal projects; of which one or two
+of them may be interesting enough to blog about as well!
 
 This time around I have chosen to use my [GitHub](http://github.com) User Page + 
 [Jekyll-Bootstrap](http://jekyllbootstrap.com/). My sincere hope is that by using
