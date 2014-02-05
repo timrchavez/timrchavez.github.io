@@ -81,7 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : busywait.disqus.com
+      short_name : busywait
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
