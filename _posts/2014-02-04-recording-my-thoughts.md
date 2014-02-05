@@ -10,6 +10,7 @@ tags: [hello world]
 I thought I would attempt to start recording some of my thoughts in a blog
 again.  This time around I've decided to use my [GitHub](http://github.com)
 User Page + [Jekyll](http://jekyllbootstrap.com/).  My sincere hope is to
-not only make this blog a little more permanent than previous attempts, but
-to update it regularly with some of the neat stuff I'm doing at work as well
-neat stuff I do outside of work.
+not only make this blog a little more permanent than my pior attempt at 
+[Tumblr](http://tumblr.com), but to update it regularly with some of the 
+neat stuff I'm doing at work as well as some of the neat stuff I'm doing 
+outside of work.`
