@@ -8,20 +8,16 @@ tags: [hello world]
 {% include JB/setup %}
 
 I attempted to start a blog at [Tumblr](http://timrcc.tumblr.com) in 2010
-right after joining [Canonical](http://www.canonical.com), I never formed 
+right after joining [Canonical](http://www.canonical.com), but I never formed 
 a blogging habbit, and that effort eventually failed.  Part of the reason 
-I think this happened had to do with the fact that I was not really working 
-on anything terribly interesting at work and most of my off time was being 
-spent learning how to be a dad (which I am still leaning, by the way).  A 
-lot has changed between 2010 and 2014, though.  For example, I feel like I 
-have established some pretty useful parenting patterns that have given me back 
-some of my free time back in the evening (mostly tricking my child to fall asleep 
-before 9PM).  I am also working on some pretty interesting things at Canonical 
-(at least for someone who enjoys release engineering, continuous integration, 
-and software delivery pipelines) that I would love to to write about openly.  I 
-have also rediscovered some of my coding mojo and developed an interest in physical 
-sensors and the so-called "Internet of things" and have a few personal projects in 
-flight that I would like to blog about as well.
+I think this happened had to do with the fact that I was not really doing 
+anything terribly interesting Canonical at the time and most of my off time
+was being spent learning how to be a new dad.  Enough has changed between 2010 
+and 2014, though, that I the urge to start blogging again.  For one, I find that
+I am currently working on some pretty interesting stuff at Canonical that I would 
+like to blog about.  My family has also finally found a routine that works and it 
+has given me back some of my free time to work on personal projects and I would 
+like to blog about those as well.
 
 This time around I have chosen to use my [GitHub](http://github.com) User Page + 
 [Jekyll-Bootstrap](http://jekyllbootstrap.com/). My sincere hope is that by using
