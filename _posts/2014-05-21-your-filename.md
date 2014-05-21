@@ -24,58 +24,42 @@ The steps for creating this SSH proxy are as follows.
 ### Instructions
 1. Install requirements on client
 
-	{{{
-	$ sudo apt-get install -y openssh-client python-novaclient
-	}}}
+		$ sudo apt-get install -y openssh-client python-novaclient
     
 2. Create an SSH keypair for your proxy / "jump host"
 
-	{{{
-	$ nova keypair-add JUMPHOST_KEY_NAME > /path/to/JUMPHOST_KEY.pem
-	}}}
+		$ nova keypair-add JUMPHOST_KEY_NAME > /path/to/JUMPHOST_KEY.pem
 
 3. Create your proxy / "jump host"
 
-	{{{
-	$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small 	--key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
-	}}}
+		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small 	--key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
 
 4. Create a floating IP address and associate it with the proxy / "jump host"
 
-	{{{
-	$ nova floating-ip-create
-	$ nova floating-ip-associate JUMPHOST_INSTANCE_ID JUMPHOST_FLOATING_IP
-	}}}
+		$ nova floating-ip-create
+		$ nova floating-ip-associate JUMPHOST_INSTANCE_ID JUMPHOST_FLOATING_IP
 
 5. Install requirments on proxy / "jump host"
 
-	{{{
-	$ ssh -i /path/to/JUMPHOST_KEY.pem ubuntu@JUMPHOST_FLOATING_IP sudo apt-get install -y netcat 
-	}}}
+		$ ssh -i /path/to/JUMPHOST_KEY.pem ubuntu@JUMPHOST_FLOATING_IP sudo apt-get install -y netcat
 
 6. Add / append the following proxy information to ~/.ssh/config on client
 
-	{{{
-	Host 15.125.127.93
-    	User ubuntu
-    	IdentityFile /path/to/JUMPHOST_KEY.pem
-    	ProxyCommand none
+		Host 15.125.127.93
+    		User ubuntu
+    		IdentityFile /path/to/JUMPHOST_KEY.pem
+    		ProxyCommand none
 
-	Host 10.0.0.*
-    	User ubuntu
-    	IdentityFile /path/to/MY_KEY.pem
-    	ProxyCommand ssh JUMPHOST_FLOATING_IP nc %h %p
-	}}}
+		Host 10.0.0.*
+    		User ubuntu
+    		IdentityFile /path/to/MY_KEY.pem
+    		ProxyCommand ssh JUMPHOST_FLOATING_IP nc %h %p
 
 7. Create a test instance
 
-	{{{
-	$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small --key-name=MY_KEY_NAME "Test instance"
-	$ nova list
-	}}}
+		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small --key-name=MY_KEY_NAME "Test instance"
+		$ nova list
 
 8.  SSH into instance from client
 
-	{{{
-    $ ssh TESTINSTANCE_PRIVATE_IP_ADDRESS
-    }}}
+	    $ ssh TESTINSTANCE_PRIVATE_IP_ADDRESS
