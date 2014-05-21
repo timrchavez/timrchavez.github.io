@@ -3,7 +3,7 @@ layout: post
 title: "Using an SSH proxy to access your HP Helion Virtual Private Cloud instances"
 description: ""
 category: "howto"
-tags: [hp, helion, openstack, ssh, proxy]
+tags: [hp, helion, openstack, vpc, ssh, proxy, jumphost, proxycommand, netcat]
 published: true
 ---
 
