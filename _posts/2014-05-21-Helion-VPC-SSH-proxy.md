@@ -1,8 +1,13 @@
 ---
+layout: post
+title: "Using an SSH proxy (e.g. 'jump host') to access your HP Helion Virtual Private Cloud instances"
+description: ""
+category: "howto"
+tags: [hp, helion, openstack, ssh, proxy]
 published: true
 ---
 
-## SSHing to your HP Helion Virtual Private Cloud instances using a "jump host" 
+## Using an SSH proxy (e.g. "jump host") to access your HP Helion Virtual Private Cloud instances
 
 When you sign up for an HP Helion account, you will be setup with a basic Virtual Private Cloud (VPC).  This, in part, means that all of the instances you spin up inside this VPC will live in a private network and be inaccessible unless you explicitly assign floating IP addresses to them, establish a site-to-site VPN between you and your VPC, or use proxies.
 
@@ -15,13 +20,15 @@ The steps for creating this SSH proxy are as follows.
 - You have a personal SSH key registered with nova (referred to as MY_KEY_NAME / MY_KEY.pem below)
 
 ### Requirements
+
 - Client (e.g. your laptop)
 	- OpenSSH
-    - python-novaclient
+	- python-novaclient
 - Proxy / "jump host"
 	- netcat
 
 ### Instructions
+
 1. Install requirements on client
 
 		$ sudo apt-get install -y openssh-client python-novaclient
@@ -33,7 +40,7 @@ The steps for creating this SSH proxy are as follows.
 3. Create your proxy / "jump host"
 
 		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e 
-        --flavor=standard.small --key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
+                --flavor=standard.small --key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
 
 4. Create a floating IP address and associate it with the proxy / "jump host"
 
