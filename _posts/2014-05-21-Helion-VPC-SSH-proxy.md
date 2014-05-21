@@ -9,7 +9,7 @@ published: true
 
 ## Using an SSH proxy to access your HP Helion Virtual Private Cloud instances
 
-When you [sign up](https://horizon.hpcloud.com/register) for an [HP Helion](http://www.hpcloud.com) account, you will be setup with a basic Virtual Private Cloud (VPC).  This, in part, means that all of the instances you spin up inside this VPC will live in a private network and be inaccessible from the Internet and / or the client network until you explicitly assign floating IP addresses to them, establish a site-to-site VPN between you and your VPC, or use proxies.
+When you [sign up](https://horizon.hpcloud.com/register) for an [HP Helion](http://www.hpcloud.com) account, you will be setup with a basic Virtual Private Cloud (VPC).  This, in part, means that all of the instances you spin up inside this VPC will live in a private network and be inaccessible to your client (e.g. laptop) until you explicitly assign floating IP addresses to them, establish a site-to-site VPN between it (or your home network, for example) and your VPC, or use proxies.
 
 If you are only (or mostly) interested in just ssh'ing to these instances from your laptop and don't want to fiddle with VPNs or using public addresses every time you, then proxying may be what you want and luckily a fairly simple solution exists that you may want to try thanks to OpenSSH, ProxyCommand, and netcat.
 
