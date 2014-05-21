@@ -32,7 +32,8 @@ The steps for creating this SSH proxy are as follows.
 
 3. Create your proxy / "jump host"
 
-		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small 	--key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
+		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e 
+        --flavor=standard.small --key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
 
 4. Create a floating IP address and associate it with the proxy / "jump host"
 
@@ -41,7 +42,8 @@ The steps for creating this SSH proxy are as follows.
 
 5. Install requirments on proxy / "jump host"
 
-		$ ssh -i /path/to/JUMPHOST_KEY.pem ubuntu@JUMPHOST_FLOATING_IP sudo apt-get install -y netcat
+		$ ssh -i /path/to/JUMPHOST_KEY.pem ubuntu@JUMPHOST_FLOATING_IP sudo apt-get
+		install -y netcat
 
 6. Add / append the following proxy information to ~/.ssh/config on client
 
@@ -57,7 +59,8 @@ The steps for creating this SSH proxy are as follows.
 
 7. Create a test instance
 
-		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e --flavor=standard.small --key-name=MY_KEY_NAME "Test instance"
+		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e 
+		--flavor=standard.small --key-name=MY_KEY_NAME "Test instance"
 		$ nova list
 
 8.  SSH into instance from client
