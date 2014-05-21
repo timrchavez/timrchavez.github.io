@@ -40,7 +40,7 @@ The steps for creating this SSH proxy (also known as a "jump host") are as follo
 3. Create your proxy / jump host
 
 		$ nova boot --image df3debd0-9391-4292-b4fe-fd3a700e7f4e 
-                --flavor=standard.small --key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
+		--flavor=standard.small --key-name=JUMPHOST_KEY_NAME "VPC Jump Host"
 
 4. Create a floating IP address and associate it with the proxy / jump host
 
