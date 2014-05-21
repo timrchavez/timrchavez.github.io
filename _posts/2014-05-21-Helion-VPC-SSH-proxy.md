@@ -11,7 +11,7 @@ published: true
 
 When you [sign up](https://horizon.hpcloud.com/register) for an [HP Helion](http://www.hpcloud.com) account, you will be setup with a basic Virtual Private Cloud (VPC).  This, in part, means all of the instances you spin up inside this VPC will be on a private network and inaccessible to your client (e.g. laptop) until you assign floating (public) IP addresses to them, establish a site-to-site VPN between your VPC and client, or use a proxy (commonly known as a "jump host") which your client has access to.
 
-If you are just interested in ssh'ing to these instances from a client and don't want to fiddle with VPNs and public addresses, then proxying may be what you want and luckily a fairly simple (already well documented ;-)) solution exists which I will describe below.
+If you are just interested in ssh'ing to these instances from a client and don't want to fiddle with VPNs and public addresses, then proxying may be what you want and luckily a fairly simple ([already well documented](http://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts) ;-)) solution exists which I will describe below.
 
 ### Assumptions
 - You have an HP Helion account
