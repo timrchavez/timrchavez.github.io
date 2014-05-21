@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## SSHing to your HP Helion Virtual Private Cloud instances using a "jump host" 
